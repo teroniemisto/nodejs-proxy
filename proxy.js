@@ -7,7 +7,7 @@ var app = express();
 var apiProxy = httpProxy.createProxyServer();
 
 app.get("/*", function(req, res){ 
-  apiProxy.web(req, res, { target: 'http://google.com' });
+  apiProxy.web(req, res, { target: 'https://s3-eu-west-1.amazonaws.com/geoserver-test/TK_EPSG_3067/openlayers_amazonaws_0-17.html' });
 });
 
 app.listen(port);
