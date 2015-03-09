@@ -7,7 +7,7 @@ var app = express();
 var apiProxy = httpProxy.createProxyServer();
 
 app.get("/*", function(req, res){ 
-  apiProxy.web(req, res, { target: 'http://www.iltalehti.fi' });
+  apiProxy.web(req, res, { target: 'http://www.google.com' });
 });
 
 app.listen(port);
