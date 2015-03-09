@@ -7,7 +7,7 @@ var app = express();
 var apiProxy = httpProxy.createProxyServer();
 
 app.get("/*", function(req, res){ 
-  apiProxy.web(req, res, { target: 'http://www.google.com' });
+  apiProxy.web(req, res, { target: 'http://www.amazon.com' });
 });
 
 app.listen(port);
